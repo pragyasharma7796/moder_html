@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-image: url('image/bcg2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+        .div1{
+            margin: 10px;
+        }
+        fieldset{
+            display: inline-block;
+        }
+        form{
+            margin-left: 24%;
+            margin-top: 20px;
+            color: beige;
+        }
+        input{
+            background: transparent;
+        }
+        input[type="text"],input[type="email"],input[type="password"],input[type="date"]{
+            
+            width: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    <div >
+        <form method="get" action="">
+            <fieldset> <legend>Sign Up</legend>
+                <div class="div1">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" required minlength="4" >
+                </div>
+                <div class="div1">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" minlength="4" required>
+                </div>
+                <div class="div1">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" minlength="6"  required>
+                </div>
+                <div class="div1">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="div1">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required >
+                </div>
+                <div class="div1">
+                    <label for="age">Age</label>
+                    <input type="date" id="age" required min="1995-01-01" max="2005-12-31">
+                </div>
+                <div class="div1">
+                    <label  for="Gender">Gender:</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                    <input type="radio" name="gender" id="male" ><label for="male">male</label>
+                    <input type="radio" name="gender" id="other"><label for="other">other</label>
+                </div>
+                <div>
+                    <button type="submit" style="margin-left:45%; margin-bottom: 20px; margin-top: 20px;">Submit</button>
+                </div>
+            </fieldset>
+            
+        </form>
+    </div>
+</body>
+</html>
